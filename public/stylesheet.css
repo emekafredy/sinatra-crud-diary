@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans|Ranga|Roboto+Mono&display=swap');
+
+.brand-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Dosis', cursive;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.home-body {
+	padding-top: 15%;
+  height: 75vh;
+}
+
+.welcome-quote {
+  font-size: 1.3rem;
+}
+
+.quote-author {
+  font-family: 'Dosis', cursive;
+  font-weight: bold;
+}

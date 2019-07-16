@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: crud_notes
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: crud_notes_test
