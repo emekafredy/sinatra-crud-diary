@@ -24,3 +24,12 @@
   font-family: 'Dosis', cursive;
   font-weight: bold;
 }
+
+.navbar {
+	border-bottom: 2px solid Gainsboro;
+	margin-bottom: 1em;
+}
+
+.bulma-styling {
+  font-family: 'Ranga', cursive;
+}

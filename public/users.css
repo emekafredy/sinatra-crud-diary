@@ -1,0 +1,29 @@
+.signup-title {
+  padding-top: 4%;
+  text-align: center;
+}
+
+.subtitle-title {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.auth-body {
+	padding-top: 1rem;
+  height: 60vh;
+}
+
+.input-divs {
+  width: 30%;
+  margin: auto;
+}
+
+.required-field {
+  font-size: 1rem;
+  color: red;
+}
+
+.auth-btn {
+  width: 80%;
+  margin: auto;
+}
