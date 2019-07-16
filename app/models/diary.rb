@@ -1,4 +1,4 @@
-class Prayer < ActiveRecord::Base
+class Diary < ActiveRecord::Base
 	validates :title, presence: true
 	validates :content, presence: true
 

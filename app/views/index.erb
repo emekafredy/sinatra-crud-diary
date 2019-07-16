@@ -8,7 +8,11 @@
       <span class="quote-author"> - Georges Duhamel </span>
     </p>
 		<div class="column is-one-third is-offset-one-third">
-			<a class="button is-primary" href="/signup">Get Started</a>
+			<% if !user_signed_in? %>
+				<a class="button is-primary" href="/signup">Get Started</a>
+			<% else %>
+				<a class="button is-primary" href="/diary-list">View Notes</a>
+			<% end %>
 		</div>
 	</div>
 </div>
