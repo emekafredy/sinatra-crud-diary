@@ -5,6 +5,7 @@
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="/users.css">
  	<title>My Diary</title>
 </head>
   <body>
@@ -24,20 +25,31 @@
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <div class="navbar-item">
-            <a class="button is-light">
-              My List
-            </a>
+						<% if user_signed_in? %>
+	            <a class="button is-light">
+	              My List
+	            </a>
+						<% end %>
           </div>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary" href="/signup">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light" href="/login">
-                Log in
-              </a>
+							<% if user_signed_in? %>
+								<a class="button is-primary" href="/signup">
+									<strong>Add note</strong>
+								</a>
+								<a class="button is-light" href="/login">
+									<strong>Hi, <%=current_user.username%></strong>
+								</a>
+							<% else %>
+								<a class="button is-primary" href="/signup">
+									<strong>Sign up</strong>
+								</a>
+								<a class="button is-light" href="/login">
+									Log in
+								</a>
+							<% end %>
             </div>
           </div>
         </div>
@@ -47,9 +59,8 @@
 
     <footer class="footer">
 		  <div class="content has-text-centered">
-		    <p>
-		      My Diary, 2019
-		    </p>
+		    <p> My Diary, 2019 </p>
+				<span>Styling powered by <a class="bulma-styling" target="_blank" href="https://bulma.io">Bulma</a></span>
 		  </div>
 		</footer>
   </body>

@@ -1,0 +1,29 @@
+<h1 class="title signup-title">Login to Account</h1>
+<div class="auth-body input-divs">
+	<form method="post" action="/login">
+    <div class="field">
+      <label class="label" for="username" >Username <span class="required-field">*</span> </label>
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="text" placeholder="Username" id="username" name="username">
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </p>
+    </div>
+		<div class="field">
+      <label class="label" for="password" >Password <span class="required-field">*</span> </label>
+			<p class="control has-icons-left">
+				<input class ="input" type="password" name="password" placeholder="Password"/>
+		    	<span class="icon is-small is-left">
+		        <i class="fas fa-lock"></i>
+		    	</span>
+			</p>
+		</div>
+    <div class="field has-text-centered auth-btn">
+      <button class="button is-success auth-btn">
+        Login
+      </button>
+    </div>
+    <p class="has-text-centered">New to My Diary? <a href="/signup"> create an account </a></p>
+	</form>
+</div>
