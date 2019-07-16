@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheet.css">
+ 	<title>My Diary</title>
+</head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <svg id="Capa_1" enable-background="new 0 0 512 512" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg"><path d="m464.867 512h-385.6c-8.284 0-15-6.716-15-15v-482c0-8.284 6.716-15 15-15h385.6c8.284 0 15 6.716 15 15v482c0 8.284-6.716 15-15 15z" fill="#3aaaff"/><path d="m464.867 0h-192.8v512h192.8c8.284 0 15-6.716 15-15v-482c0-8.284-6.716-15-15-15z" fill="#0082ff"/><path d="m352.4 206.733h-160.667c-8.284 0-15-6.716-15-15s6.716-15 15-15h160.667c8.284 0 15 6.716 15 15s-6.716 15-15 15z" fill="#f6efea"/><path d="m352.4 271h-160.667c-8.284 0-15-6.716-15-15s6.716-15 15-15h160.667c8.284 0 15 6.716 15 15s-6.716 15-15 15z" fill="#f6efea"/><path d="m257.067 335.267h-65.333c-8.284 0-15-6.716-15-15s6.716-15 15-15h65.333c8.284 0 15 6.716 15 15s-6.716 15-15 15z" fill="#f6efea"/><g fill="#ffbe1e"><path d="m111.4 431.667h-64.267c-8.284 0-15-6.716-15-15s6.716-15 15-15h64.267c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/><path d="m111.4 351.333h-64.267c-8.284 0-15-6.716-15-15s6.716-15 15-15h64.267c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/><path d="m111.4 271h-64.267c-8.284 0-15-6.716-15-15s6.716-15 15-15h64.267c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/><path d="m111.4 190.667h-64.267c-8.284 0-15-6.716-15-15s6.716-15 15-15h64.267c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/><path d="m111.4 110.333h-64.267c-8.284 0-15-6.716-15-15s6.716-15 15-15h64.267c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/></g><path d="m352.4 176.733h-80.333v30h80.333c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#eee1dc"/><path d="m352.4 241h-80.333v30h80.333c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#eee1dc"/></svg> <span class="brand-text">MY DIARY</span>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <a class="button is-light">
+              My List
+            </a>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="/signup">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light" href="/login">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+
+    <footer class="footer">
+		  <div class="content has-text-centered">
+		    <p>
+		      My Diary, 2019
+		    </p>
+		  </div>
+		</footer>
+  </body>
+</html>
