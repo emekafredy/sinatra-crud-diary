@@ -10,7 +10,7 @@
 
 .auth-body {
 	padding-top: 1rem;
-  height: 60vh;
+  min-height: 65vh;
 }
 
 .input-divs {
@@ -26,4 +26,11 @@
 .auth-btn {
   width: 80%;
   margin: auto;
+}
+
+.no-notes {
+  font-family: 'Dosis', cursive;
+  padding: 2rem;
+  padding-top: 7rem;
+  font-size: 2rem;
 }

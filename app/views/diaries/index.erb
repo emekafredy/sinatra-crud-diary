@@ -1,0 +1,12 @@
+<div class="auth-body">
+	<% if @notes.count > 0 %>
+		<% @notes.each do |note| %>
+			<a href="/notes/<%=note.id%>">
+			  	<p><%= @note.content %></p>
+			</a>
+			<br>
+		<% end %>
+	<% else %>
+		<h1 class="no-notes has-text-centered"> You currently have no note in your diary </h1>
+	<% end %>
+</div>

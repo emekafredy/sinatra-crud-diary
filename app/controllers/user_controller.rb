@@ -17,7 +17,6 @@ class UserController < ApplicationController
 		else
 			if user.save
 				session[:user_id] = user.id
-        puts "NEW SESSION", session[:user_id]
 				flash.next[:greeting] = "Welcome, #{user.username}"
 				redirect '/diary-list'
 			else
@@ -47,4 +46,15 @@ class UserController < ApplicationController
       redirect "/login"
 	 	end
  	end
+
+  get '/logout' do
+		if user_signed_in?
+			session.clear
+			flash.next[:greeting] = "You've been logged out"
+			redirect '/'
+		else
+			flash.next[:greeting] = "You were not logged in"
+			redirect '/'
+		end
+	end
 end

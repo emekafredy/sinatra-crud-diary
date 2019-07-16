@@ -27,7 +27,7 @@
           <div class="navbar-item">
 						<% if user_signed_in? %>
 	            <a class="button is-light">
-	              My List
+	              My Notes
 	            </a>
 						<% end %>
           </div>
@@ -36,11 +36,15 @@
           <div class="navbar-item">
             <div class="buttons">
 							<% if user_signed_in? %>
+								<a class="button" href="/login">
+									<strong>Hi, <%=current_user.username%></strong>
+								</a>
+								<span></span>
 								<a class="button is-primary" href="/signup">
 									<strong>Add note</strong>
 								</a>
-								<a class="button is-light" href="/login">
-									<strong>Hi, <%=current_user.username%></strong>
+								<a class="button is-danger" href="/logout">
+									<strong>Logout</strong>
 								</a>
 							<% else %>
 								<a class="button is-primary" href="/signup">
